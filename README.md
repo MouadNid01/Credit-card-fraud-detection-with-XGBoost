@@ -12,5 +12,19 @@ The dataset used in this project is the kaggle Credit card fraud detection datas
 It contains two-day transactions made on 09/2013 by European cardholders. The dataset is highly unbalanced, with the minority class which is the fraudulent transactions accounting for only 0.17 %.
 
 ## Model evaluation
+The models performance on the test set are resumed in the table below:
+<div align='center'>
+  
+| Metric | XGBoost without SMOTE | XGBoost with SMOTE |
+| -------- | --------------------- | ---------------- |
+| **AUPRC** | 87.73 | 99.96 |
+| **Precision** | 89.72 | 99.92 |
+| **Recall** | 85.71 | 99.99 |
+| **Accuracy** | 99.95 | 99.95 |
+  
+</div>
 
 ## Referrences
+* https://arxiv.org/pdf/1106.1813.pdf
+* https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248
+* https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/
